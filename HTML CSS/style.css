@@ -1,0 +1,41 @@
+.rubr1 {
+  font-size: 25px;
+  font-family: monospace;
+  text-align: inherit;
+  color: rgb(223, 16, 16);
+}
+.home {
+  background-color: moccasin;
+  font-family: monospace;
+  font-size: 20px;
+}
+.HelloWorld {
+  font-family: monospace;
+  font-size: 40px;
+  color: palegreen;
+}
+.linkencss {
+  font-size: 20px;
+  color: blue;
+}
+h2 {
+  color: red;
+}
+.boxPad {
+  padding: 20px;
+  border: 1px solid red;
+  margin-bottom: 20px;
+}
+.boxBor {
+  border: double;
+}
+.boxMarg {
+  border: 1px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 75px;
+  margin-left: 40px;
+}
+.underr {
+  color: black;
+}

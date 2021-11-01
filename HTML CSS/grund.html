@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>grund</title>
+    <meta name="author" content="Aymen Derraji" />
+    <meta name="description" content="CSS grund" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="keywords" content="CSS, extern-intern-inline" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Extern CSS</h2>
+    <p>
+      Extern CSS betyder att du använder dig av en separat CSS-fil som
+      innehåller dina deklarationer. Webbsidan länkas sedan ihop med CSS-filen,
+      även kallad för stilmall, och får på så sätt information om hur varje
+      element eller tagg på webbsidan ska visas. Med extern CSS kan du göra
+      stora förändringar i layouten/designen på hela din webbplats utan att du
+      behöver ändra mer än någon enstaka rad i stilmallen. <br />
+      Ett exempel på just denna CSS-inhämtning är: <br /><br />
+      <code class="linkencss"
+        >&lt;link rel="stylesheet" href="style.css"/&gt;</code
+      >
+      <br />
+    </p>
+
+    <h2>Intern CSS</h2>
+
+    <p>
+      Intern CSS är nästan som extern CSS men skillnaden är att det inte finns
+      någon extern stilmall. CSS-deklarationerna läggs istället in mellan
+      &lt;style&gt; elementet i HTML filen. Exempel på det är:
+    </p>
+    <code class="linkencss"
+      >&lt;style type="text/css"&gt;<br />
+
+      p {<br />
+      font-family: sans-serif;<br />
+      font-size: 14px;<br />
+      }<br />
+      h1 {<br />
+      font-size: 36px;}<br />
+      &lt;/style&gt;</code
+    >
+
+    <h2>Inline CSS</h2>
+    <p>
+      Inline CSS är mest användbart när du vill justera smådetaljer och inte
+      vill lägga upp deklarationerna i en extern stilmall. Ett annat exempel på
+      när inline CSS kan användas är när du vill frångå den externa stilmallen
+      och ge de regler som du sätter upp internt företräde framför de externa
+      deklarationerna. Se
+    </p>
+    <p>
+      Denna rad fungerar som exempel för att visa hur vi kan skriva
+      <span style="color: red; font-style: italic; font-weight: bold">
+        röd, fet, kursiv text</span
+      >
+      mitt i en vanlig text.
+      <span style="color: green"> Den här gröna texten</span> är också gjord med
+      inline CSS. Exempel är:
+    </p>
+    <code class="linkencss">
+      &lt;span style="color:red; font-style: italic; font-weight:bold;"&gt; röd,
+      fet, kursiv text&lt;/span&gt;
+    </code>
+  </body>
+</html>

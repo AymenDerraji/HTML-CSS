@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>egenskaper</title>
+    <meta name="author" content="Aymen Derraji" />
+    <meta name="description" content="CSS egenskaper" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="keywords" content="CSS design" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Color:</h2>
+      <div>
+        <p>
+          Color representerar färgläggning för text helt enkelt till exempel om
+          jag väljer att färga om
+          <span style="color: red">Hello World!</span> till rött. Se nedan hur
+          koden kan se ut <br />
+          <code class="linkencss">
+            &lt;span style="color: red"&gt;Hello World!&lt;/span&gt;
+          </code>
+        </p>
+      </div>
+    </div>
+    <div>
+      <h2>Font:</h2>
+      <ul>
+        <li>
+          <b>Font-Family</b> olika teckensnitt kan se ut som nedanstående
+          exempel:
+          <div>
+            <p style="font-family: serif">Serif teckensnitt</p>
+            <p style="font-family: cursive">Cursive teckensnitt</p>
+            <p style="font-family: sans-serif">Sans-serif teckensnitt</p>
+          </div>
+        </li>
+
+        <li>
+          <b>Font-Style</b> anger text typsnitt som till exempel:
+          <div>
+            <p style="font-style: normal">Normal style</p>
+            <p style="font-style: italic">Italic style</p>
+            <p style="font-style: oblique">Oblique style</p>
+          </div>
+        </li>
+
+        <li>
+          <b>Font-Size</b> anger typsnitt storlek till exempel:
+          <div>
+            <p style="font-size: 10px">font-size 10px</p>
+            <p style="font-size: 20px">font-size 20px</p>
+            <p style="font-size: 25px">font-size 25px</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <h2>Text:</h2>
+      <ul>
+        <li>
+          <b>Text-align</b> anger den horisontella inriktningen av text i ett
+          element till exempel:
+          <div>
+            <p style="text-align: center">Center text</p>
+            <p style="text-align: left">Left text</p>
+            <p style="text-align: right">Right text</p>
+            <p style="text-align: justify">Justify text</p>
+          </div>
+          <br />
+          Ovanstående text-align style koden ser ut så här: <br />
+          <code class="linkencss">
+            &lt;style="Text-align: center"&gt; Center text <br />
+            &lt;style="Text-align: left"&gt; Left text <br />
+            &lt;style="Text-align: right"&gt; Right text <br />
+            &lt;style="Text-align: justify"&gt; Justify text <br />
+          </code>
+        </li>
+        <li>
+          <b>Text-decoration</b> egenskapen anger dekoration som läggs till
+          text. Till exempel:
+          <div>
+            <p style="text-decoration: overline">Overline</p>
+            <p style="text-decoration: line-through">Line-through</p>
+            <p style="text-decoration: underline">Underline</p>
+            <p style="text-decoration: underline overline">
+              Underline Overline
+            </p>
+          </div>
+          <br />
+          Ovanstående text-decoration style koden ser ut så här: <br />
+          <code class="linkencss">
+            &lt;style="Text-decoration:overline"&gt;Overline <br />
+            &lt;style="Text-decoration:line-through"&gt;Line-through <br />
+            &lt;style="Text-decoration:underline"&gt;Underline <br />
+            &lt;style="Text-decoration:underline overline"&gt;Underline
+            Overline<br />
+          </code>
+        </li>
+      </ul>
+    </div>
+    <h2>Class och ID</h2>
+    <p>
+      I CSS används class och id för att identifiera olika HTML-element. Den
+      största fördelen med att ställa in klass eller ID är att du kan presentera
+      samma HTML-element på olika sätt, beroende på dess class eller ID.
+    </p>
+    <ul>
+      <li>
+        <b>Class</b>
+        <div>
+          Class selectorn väljer element med en specifik class attribut. Det
+          matchar alla HTML-element baserat på innehållet i deras class
+          attribut. Punkt tillsammans med class namnet används för att välja
+          önskad class.
+        </div>
+      </li>
+
+      <li>
+        <b>ID</b>
+        <div>
+          För att elementet ska kunna väljas måste dess ID-attribut exakt matcha
+          värdet som anges i väljaren. # symbol och id av HTML-element namn
+          används för att välja det önskade elementet.
+        </div>
+      </li>
+    </ul>
+    <div>
+      <h2>Word-spacing:</h2>
+      Med den här egenskapen kan man öka eller minska det vita utrymmet mellan
+      ord. Se nedan för exempel: <br />
+      <p style="word-spacing: 20px">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      </p>
+    </div>
+    Ovanstående word-spacings kod ser ur som nedan: <br />
+    <code class="linkencss">
+      &lt;p style="word-spacing: 20px"&gt;Lorem ipsum dolor sit amet,
+      consectetur adipiscing elit&lt;/p&gt;</code
+    >
+
+    <div>
+      <h2>Background:</h2>
+      <ul>
+        <li>
+          <b>Background-color</b>
+          <p>
+            Background-color ändrar elementets bakgrundsfärg. Alla element har
+            standard och transparent bakgrund. Färger kan specificeras efter
+            smak och behov.
+          </p>
+          Exempel:
+          <div style="background-color: aqua">
+            <p>Denna bakgrund har aqua färg</p>
+            <p>Denna bakgrund har aqua färg</p>
+          </div>
+          Ovanstående exempel ser ut så här: <br />
+          <code class="linkencss"
+            >&lt;div style="background-color: aqua"&gt; </code
+          ><br />
+        </li>
+        <li>
+          <b>Background-image</b>
+          <p>
+            Background-image ändrar elementets bakgrundsbild. Alla element har
+            standard och transparent bakgrund. Bakgrundsbilder kan specificeras
+            efter smak och behov.
+          </p>
+          Exempel:
+          <div
+            style="
+              background-image: url('http://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+              color: azure;
+            "
+          >
+            <p>Här har jag infogat en bakgrundsbild</p>
+            <p>Här har jag infogat en bakgrundsbild</p>
+          </div>
+          Ovanstående exempel ser ut så här: <br />
+          <code class="linkencss">
+            &lt;div style=" background-image:
+            url('http://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+            " &gt;</code
+          >
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

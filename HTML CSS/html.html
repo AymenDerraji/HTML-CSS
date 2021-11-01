@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>HTML</title>
+    <meta name="author" content="Aymen Derraji" />
+    <meta name="description" content="HTML beskrivning" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="keywords" content="HTML kortfattat" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hyper">
+      <h2 class="rubr1">&lt;!DOCTYPE html&gt;</h2>
+      <p>
+        Märkspråket HTML finns i flera olika versioner. Beroende lite på vilken
+        version man använder så finns det olika element som kan användas. För
+        varje generation har det tillkommit element men det har också försvunnit
+        vissa funktioner som dels blivit överflödiga eller ej ses som korrekta.
+        Det är viktigt att vara tydlig för webbläsaren vilken version man
+        använder. Därför börjar hela HTML dokumentet med en DOCTYPE.
+      </p>
+      <h2 class="rubr1">&lt;html&gt;</h2>
+      <p>
+        Förkortningen HTML står för Hyper Text Markup Language och är det
+        märkspråk som webbsidor är konstruerade med. När en webbläsare läser in
+        en hemsida som innehåller en starttagg med HTML så förstår den hur
+        dokumentet ska renderas upp. Därför är det viktigt att varje dokument
+        startar och avslutas med taggen HTML.
+      </p>
+      <h2 class="rubr1">&lt;head&gt;</h2>
+      <p>
+        Om man ser en hemsida som en människa så finns det flera namn som har
+        lånats. Till exempel head, body och footer. I head taggen så skriver vi
+        kod och funktioner som inte direkt kommer vara visuellt synligt på
+        hemsidan.
+      </p>
+      <h2 class="rubr1">&lt;body&gt;</h2>
+      <p>
+        HTML &lt;body&gt;-taggen definierar huvudinnehållet i ett HTML-dokument
+        som visas i webbläsaren. Det kan innehålla text, stycken, rubriker,
+        bilder, tabeller, länkar, videor, etc. &lt;body&gt; ska vara det andra
+        elementet efter &lt;head&gt;-taggen. Denna tagg krävs för varje
+        HTML-dokument och bör endast användas en gång i hela HTML-dokumentet.
+      </p>
+      <h2 class="rubr1">&lt;title&gt;</h2>
+      <p>
+        Title är precis som det låter titeln på hemsidan. Den är inte visuellt
+        synlig på själva webbsidan men styr texten i fliken i din webbläsare.
+        &lt;title&gt;-taggen ska finnas i &lt;head&gt;-taggen för att fungera
+        korrekt. Det är viktigt att titeln stämmer överens med innehållet på
+        HTML dokumentet då det är den titeln som syns när du söker på sökmotorer
+        så som Google.
+      </p>
+      <h2 class="rubr1">&lt;meta&gt;</h2>
+      <p>
+        Meta taggen är inte synlig på hemsidan men den innehåller information om
+        rörande hemsidan. Det finns några viktiga värden som är viktiga att
+        känna till. Description – Vad den aktuella hemsidan handlar om. Keywords
+        – Vissa viktiga nyckelord för sökmotorerna att förklara innehållet.
+        Author – Vem det är som har skapat innehållet. Även attributet charset
+        är viktigt då det hjälper webbläsaren att läsa in rätt
+        teckenuppsättning. Den svenska språket innehåller som känt är ÅÄÖ och
+        för att dessa ska visas upp på ett rätt sätt så anger man UTF-8 som
+        teckenuppsättning.
+      </p>
+      <h2 class="rubr1">&lt;style&gt;</h2>
+      <p>
+        Om du vill skriva CSS kod i HTML dokumentet så kan du använda taggen
+        &lt;style&gt;. Style taggen ska sättas in i &lt;head&gt;-taggen i
+        HTML-dokumentet. Tänk på att den CSS koden du skriver lokalt i HTML-
+        dokumentet kommer bara påverka just detta dokumentet. Om du skapar
+        webbsidor med fler HTML-dokument är det bättre att skriva CSS-koden i
+        ett separat dokument.
+      </p>
+      <h2 class="rubr1">&lt;link&gt;</h2>
+      <p>
+        För att länka samman ditt HTML-dokument med andra typer av dokument så
+        skall du använda &lt;link&gt;-taggen. Om du vill länka in externa
+        formatmallar (css-kod mm) så kan du göra det med &lt;link&gt;.
+      </p>
+      <h2 class="rubr1">&lt;!&#8212; kommentar &#8212;&gt;</h2>
+      <p>
+        Kommentarskod hjälper dig som utvecklare att strukturera upp din kod och
+        skriva förklaringar och minnesanteckningar direkt i koden. Det man
+        skriver innanför &lt;!— och —&gt; kommer inte läsas av webbläsaren och
+        visas inte upp på själva webbsidan men när man tittar i källkoden så
+        syns det i klartext.
+      </p>
+      <h2 class="rubr1">Hyperlänkar</h2>
+      <ul>
+        <li>
+          <b>Absolut:</b> är en komplett webbadress som också innefattar
+          filöverföringsprotokoll "http://" eller "https://" innan den
+          fullständiga webbadressen till en webbplats, exempelvis
+          <a href="https://www.tucsweden.se/utbildning/"> Tucs hemsida</a>. En
+          absolut länk kan användas i alla webbläsare och andra program som kan
+          hämta webbsidor eller information som publiceras med webbteknik.
+        </li>
+        <li>
+          <b>Relativ:</b> är en relativ länk en en del av en adress, till
+          exempel /utbildning/. En relativ länk kan bara användas till att länka
+          till adresser eller doku­ment som finns i samma system. Exempelvis
+          <a href="relativ.html"> denna relativa länk</a>
+        </li>
+        <li>
+          <b>Anchor:</b> är en hyperlänk som kopplar en sida till en annan sida
+          . Det kan skapa hyperlänkar till andra webbsidor såväl som filer,
+          plats eller vilken URL som helst. Attributet "href" är det viktigaste
+          attributet för HTML-taggen. Klicka på
+          <a href="#hyper">sidans start</a> för att se vad som händer.
+        </li>
+        <li>
+          <b>Bild länk:</b> här kan man exempelvis länka till foodora<a
+            href="https://www.foodora.se/"
+            ><img
+              src="image/foodora%20(kopia).png"
+              alt="bild"
+              style="width: 30px; height: 30px"
+          /></a>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>formular</title>
+    <meta name="author" content="Aymen Derraji" />
+    <meta name="description" content="HTML formulär kortguide" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="keywords" content="Formulär beskrivning" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label for="namn">Namn:</label><br />
+    <input type="text" name="namn" id="namn" /><br />
+
+    <label for="passw">Lösenord:</label><br />
+    <input type="password" name="passw" id="passw" /><br />
+
+    <label for="paragraf">Paragraf:</label><br />
+    <textarea name="Paragraf" id="paragraf" cols="40" rows="5"></textarea><br />
+
+    <input type="checkbox" name="Bocka av" id="bock" value="bock" />
+    <label for="bock">Bocka här</label><br />
+
+    <label for="bokningsdatum"> Välj datum här:</label><br />
+    <input type="date" name="bokningsdatum" id="bokningsdatum" /><br />
+
+    <form>
+      <label for="e-postadress">e-postadress:</label><br />
+      <input type="email" name="email" id="e-postadress" /><input
+        type="submit"
+        name="skicka"
+        id="skicka"
+        value="Skicka"
+      />
+    </form>
+    <br />
+    <form>
+      <label for="Val1">Val:</label><br />
+
+      <input
+        id="Val1"
+        type="radio"
+        name="Val"
+        value="1"
+        onClick="alert('Du har valt nummer: 1')"
+      />
+      <label for="Val1">Val 1</label> <br />
+
+      <input
+        id="Val2"
+        type="radio"
+        name="Val"
+        value="2"
+        onClick="alert('Du har valt nummer: 2')"
+      />
+      <label for="Val2">Val 2</label> <br />
+
+      <input
+        id="Val3"
+        type="radio"
+        name="Val"
+        value="3"
+        onClick="alert('Du har valt nummer: 3')"
+      />
+      <label for="Val3">Val 3</label> <br />
+
+      <input
+        id="Val4"
+        type="radio"
+        name="Val"
+        value="4"
+        onClick="alert('Du har valt nummer: 4')"
+      />
+      <label for="Val4">Val 4</label> <br />
+      <br />
+      <input type="reset" name="reset" id="reset" value="Reset" /><br />
+    </form>
+  </body>
+</html>

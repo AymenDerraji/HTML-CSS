@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>boxModel</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Aymen Derraji" />
+    <meta name="description" content="Box model beskrivning" />
+    <meta http-equiv="refresh" content="30" />
+    <meta name="keywords" content="CSS, basic manual" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Box models:</h2>
+      <p>
+        Termen "Box models" används när man pratar om design och layout.
+        Boxmodellen är i huvudsak en ruta som sveper runt HTML-element, och den
+        består av: marginaler, kanter, stoppning och det faktiska innehållet.
+        Boxmodellen tillåter oss att placera en kant runt element och
+        rymdelement i förhållande till andra element.
+      </p>
+      <ul>
+        <li><b>Content:</b> Innehållet i rutan, där text och bilder visas.</li>
+
+        <li class="boxPad">
+          <b>Padding:</b> Kontrollerar området runt innehållet. Stoppningen
+          påverkas av bakgrundsfärgen på lådan. Exempel: i denna ruta använder
+          jag 20px padding.
+        </li>
+        <li class="boxBor">
+          <b>Border:</b> Bordern som går runt stoppningen och innehållet.
+          Egenskaper som gränsbredd, kanstil och gränsfärg styrs av border. Här
+          använder jag en double border.
+        </li>
+        <li class="boxMarg">
+          <b>Margin:</b> Marginal används för att skapa utrymme runt elementet,
+          utanför alla definierade ramar. Exempel: här använder jag margin top
+          50px, bottom 50px, right 75px och left 40px.
+        </li>
+      </ul>
+      <p class="linkencss">
+        *Viktigt att notera är att egenskaper som genomskinlig bakgrundsfärg
+        (rgba) och rundade hörn för boxen går att justera med hjälp av
+        background-color/image samt border-radius.
+      </p>
+      <p>Här nedan kan man se hur en model box ska se ut:</p>
+      <div>
+        <img
+          alt="bmodel"
+          src="https://s3-torquehhvm-wpengine.netdna-ssl.com/uploads/2018/05/csss-box-model.png"
+        />
+      </div>
+    </div>
+  </body>
+</html>
